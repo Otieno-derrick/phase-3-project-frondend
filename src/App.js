@@ -1,7 +1,5 @@
-import AllUsers from './Component/AllUsers';
-import AddUser from './Component/AddUser';
-import EditUser from './Component/EditUser';
-import NavBar from './Component/NavBar';
+import React from 'react';
+import AddUser from './Components/AddUser';
 import CodeForInterview from './Component/CodeForInterview';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
