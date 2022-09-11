@@ -1,9 +1,9 @@
 import React from 'react';
-import AddUser from './Components/AddUser';
-import AllUsers from './Components/AllUsers';
+import AddEmployee from './Components/AddEmployee';
+import Employees from './Components/Employees';
 import EditUser from './Components/EditUser';
 import NavBar from './Components/NavBar';
-import WebFront from './Components/WebFront'
+import WebFront from './Components/WebFront';
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
@@ -13,8 +13,8 @@ function App() {
       <NavBar />
       <Routes>
         <Route path="/" element={<WebFront />} />
-        <Route path="/all" element={<AllUsers />} />
-        <Route path="/add" element={<AddUser />} />
+        <Route path="/all" element={<Employees />} />
+        <Route path="/add" element={<AddEmployee />} />
         <Route path="/edit/:id" element={<EditUser />} />
       </Routes>
     </BrowserRouter>

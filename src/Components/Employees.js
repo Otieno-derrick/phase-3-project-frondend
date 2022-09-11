@@ -24,19 +24,19 @@ const TRow = styled(TableRow)`
 `;
 
 
-const AllUsers = () => {
+const Employees = () => {
     const [users, setUsers] = useState([]);
 
     useEffect(() => {
-        getAllUsers();
+        getEmployees();
     }, []);
 
     const deleteUserData = async (id) => {
         await deleteUser(id);
-        getAllUsers();
+        getEmployees();
     }
 
-    const getAllUsers = async () => {
+    const getEmployees = async () => {
         let response = await getUsers();
         setUsers(response.data);
     }
@@ -72,4 +72,4 @@ const AllUsers = () => {
     )
 }
 
-export default AllUsers;
+export default Employees;

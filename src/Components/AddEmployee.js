@@ -1,4 +1,4 @@
-import react, { useState } from 'react';
+import React, { useState } from 'react';
 import { FormGroup, FormControl, InputLabel, Input, Button, styled, Typography } from '@mui/material';
 import { addUser } from '../Service/api';
 import { useNavigate } from 'react-router-dom';
@@ -17,7 +17,7 @@ const Container = styled(FormGroup)`
         margin-top: 20px;
 `;
 
-const AddUser = () => {
+const AddEmployee = () => {
     const [user, setUser] = useState(initialValue);
     const { name, username, email, phone } = user;
     let navigate = useNavigate();
@@ -57,4 +57,4 @@ const AddUser = () => {
     )
 }
 
-export default AddUser;
+export default AddEmployee;
