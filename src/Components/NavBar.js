@@ -1,9 +1,10 @@
 
 import { AppBar, Toolbar, styled } from '@mui/material';
 import { NavLink } from 'react-router-dom';
+import Employees from './Employees'
 
 const Header = styled(AppBar)`
-    background: #111111;
+    background: #0e420d;
 `;
 
 const Tabs = styled(NavLink)`
@@ -18,9 +19,9 @@ const NavBar = () => {
     return (
         <Header position="static">
             <Toolbar>
-                <Tabs to="./" exact>Code for Interview</Tabs>
-                <Tabs to="all" exact>All Users</Tabs>
-                <Tabs to="add" exact>Add User</Tabs>
+                <Tabs to="./" exact>CodeWorld</Tabs>
+                <Tabs to="all" exact>Employees</Tabs>
+                <Tabs to="add" exact>Add Employee</Tabs>
             </Toolbar>
         </Header>
     )

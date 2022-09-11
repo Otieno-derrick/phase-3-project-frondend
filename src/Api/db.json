@@ -243,6 +243,27 @@
       "email": "otieno.derrick@student.moringaschool.com",
       "phone": "03728794",
       "id": 12
+    },
+    {
+      "name": "Nunua all",
+      "username": "otieno-derrick",
+      "email": "otieno.derrick@student.moringaschool.com",
+      "phone": "03728794",
+      "id": 13
+    },
+    {
+      "name": "",
+      "username": "",
+      "email": "",
+      "phone": "",
+      "id": 14
+    },
+    {
+      "name": "",
+      "username": "",
+      "email": "",
+      "phone": "",
+      "id": 15
     }
   ]
 }

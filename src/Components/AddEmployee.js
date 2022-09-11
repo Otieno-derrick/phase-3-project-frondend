@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { FormGroup, FormControl, InputLabel, Input, Button, styled, Typography } from '@mui/material';
-import { addUser } from '../Service/api';
+import { addUser } from '../Fetch/api';
 import { useNavigate } from 'react-router-dom';
 
 const initialValue = {

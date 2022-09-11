@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 
 import { Table, TableHead, TableCell, TableRow, TableBody, Button, styled } from '@mui/material'
-import { getUsers, deleteUser } from '../Service/api';
+import { getUsers, deleteUser } from '../Fetch/api';
 import { Link } from 'react-router-dom';
 
 const StyledTable = styled(Table)`

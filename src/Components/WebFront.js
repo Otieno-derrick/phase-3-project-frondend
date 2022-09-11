@@ -4,7 +4,9 @@ import React from 'react';
 const WebFront= () => {
 
     return (
-        <h1> home </h1>
+
+
+        <h1 className='title'> CodeWorld  </h1>
 
     )
 }

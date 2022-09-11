@@ -4,7 +4,7 @@ import { useState, useEffect } from 'react';
 
 import { FormGroup, FormControl, InputLabel, Input, Button, styled, Typography } from '@mui/material';
 import { useNavigate, useParams } from 'react-router-dom';
-import { getUsers, editUser } from '../Service/api';
+import { getUsers, editUser } from '../Fetch/api';
 
 const initialValue = {
     name: '',
@@ -67,7 +67,7 @@ const EditEmployee = () => {
                 <Input onChange={(e) => onValueChange(e)} name='phone' value={phone} id="my-input" aria-describedby="my-helper-text" />
             </FormControl>
             <FormControl>
-                <Button variant="contained" color="primary" onClick={() => editUserDetails()}>Edit User</Button>
+                <Button variant="contained" color="primary" onClick={() => editUserDetails()}>Edit</Button>
             </FormControl>
         </Container>
     )
