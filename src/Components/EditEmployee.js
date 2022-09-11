@@ -21,7 +21,7 @@ const Container = styled(FormGroup)`
 `;
 
 
-const EditUser = () => {
+const EditEmployee = () => {
     const [user, setUser] = useState(initialValue);
     const { name, username, email, phone } = user;
     const { id } = useParams();
@@ -73,4 +73,4 @@ const EditUser = () => {
     )
 }
 
-export default EditUser;
+export default EditEmployee;
