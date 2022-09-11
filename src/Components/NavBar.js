@@ -8,7 +8,7 @@ const Header = styled(AppBar)`
 `;
 
 const Tabs = styled(NavLink)`
-    color: #FFFFFF;
+    color: #13c782;
     margin-right: 20px;
     text-decoration: none;
     font-size: 20px;

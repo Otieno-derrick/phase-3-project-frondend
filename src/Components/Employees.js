@@ -13,7 +13,7 @@ const THead = styled(TableRow)`
     & > th {
         font-size: 20px;
         background: #0e420d;
-        color: #FFFFFF;
+        color: #13c782;
     }
 `;
 

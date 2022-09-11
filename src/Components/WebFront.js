@@ -6,7 +6,7 @@ const WebFront= () => {
     return (
 
 
-        <h1 className='title'> CodeWorld  </h1>
+        <h1 className='title'> CodeWorld On Tech </h1>
 
     )
 }
