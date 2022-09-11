@@ -12,14 +12,14 @@ const StyledTable = styled(Table)`
 const THead = styled(TableRow)`
     & > th {
         font-size: 20px;
-        background: #000000;
+        background: #0e420d;
         color: #FFFFFF;
     }
 `;
 
 const TRow = styled(TableRow)`
     & > td{
-        font-size: 18px
+        font-size: 20px;
     }
 `;
 
@@ -37,8 +37,8 @@ const Employees = () => {
     }
 
     const getEmployees = async () => {
-        let response = await getUsers();
-        setUsers(response.data);
+        let res = await getUsers();
+        setUsers(res.data);
     }
 
     return (
