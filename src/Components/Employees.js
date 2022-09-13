@@ -45,15 +45,16 @@ const Employees = () => {
         }, []);
 
 
-    const deleteUserData = async (id) => {
-        await deleteUser(id);
-        getUsers();
+   const deleteUserData =(id) => {
+        getUsers.deleteUserData(id).then( res => {
+            this.setState({users: this.state.users.filter(employee => users.id !== id)});
+        });
     }
 
-    const getUsers = async () => {
-        let res = await getUsers();
-        setUsers(res.data);
-    }
+    // const getUsers = async () => {
+    //     let res = await getUsers();
+    //     setUsers(res.data);
+    // }
 
     return (
         <StyledTable>
