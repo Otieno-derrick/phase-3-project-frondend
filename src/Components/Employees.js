@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import axios from 'axios';
 import { Table, TableHead, TableCell, TableRow, TableBody, Button, styled } from '@mui/material'
 import { getUsers, deleteUser } from '../Fetch/api';
 import { Link } from 'react-router-dom';
@@ -22,20 +23,34 @@ const TRow = styled(TableRow)`
     }
 `;
 
+const usersUrl = 'http://localhost:9292/users';
+
 
 const Employees = () => {
     const [users, setUsers] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     useEffect(() => {
-        getEmployees();
-    }, []);
+        const getUser = async () => {
+            try {
+              const { data: response } = await axios.get(usersUrl);
+              setUsers(response);
+            } catch (error) {
+              console.error(error)
+            }
+            setLoading(false);
+          };
+
+          getUser();
+        }, []);
+
 
     const deleteUserData = async (id) => {
         await deleteUser(id);
-        getEmployees();
+        getUsers();
     }
 
-    const getEmployees = async () => {
+    const getUsers = async () => {
         let res = await getUsers();
         setUsers(res.data);
     }
