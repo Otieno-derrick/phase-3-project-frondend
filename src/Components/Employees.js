@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react';
-
 import { Table, TableHead, TableCell, TableRow, TableBody, Button, styled } from '@mui/material'
 import { getUsers, deleteUser } from '../Fetch/api';
 import { Link } from 'react-router-dom';
@@ -50,7 +49,7 @@ const Employees = () => {
                     <TableCell>Username</TableCell>
                     <TableCell>Email</TableCell>
                     <TableCell>Phone</TableCell>
-                    <TableCell></TableCell>
+                    <TableCell>Action</TableCell>
                 </THead>
             </TableHead>
             <TableBody>

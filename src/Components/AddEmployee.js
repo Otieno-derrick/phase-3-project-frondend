@@ -19,21 +19,21 @@ const Container = styled(FormGroup)`
 
 const AddEmployee = () => {
     const [user, setUser] = useState(initialValue);
-    const { name, username, email, phone } = user;
+    const { name, username,  email, phone } = user;
     let navigate = useNavigate();
 
     const onValueChange = (e) => {
-        setUser({...user, [e.target.name]: e.target.value})
-    }
+        setUser({...user, [e.target.name]: e.target.value});
+    };
 
     const addUserDetails = async() => {
         await addUser(user);
         navigate('/all');
-    }
+    };
 
     return (
         <Container>
-            <Typography variant="h4">Add User</Typography>
+            <Typography variant="h4">Add Employee</Typography>
             <FormControl>
                 <InputLabel htmlFor="my-input">Name</InputLabel>
                 <Input onChange={(e) => onValueChange(e)} name='name' value={name} id="my-input" />
@@ -51,7 +51,7 @@ const AddEmployee = () => {
                 <Input onChange={(e) => onValueChange(e)} name='phone' value={phone} id="my-input" />
             </FormControl>
             <FormControl>
-                <Button variant="contained" color="primary" onClick={() => addUserDetails()}>Add User</Button>
+                <Button variant="contained" color="primary" onClick={() => addUserDetails()}>Add Employee</Button>
             </FormControl>
         </Container>
     )

@@ -23,7 +23,7 @@ const Container = styled(FormGroup)`
 
 const EditEmployee = () => {
     const [user, setUser] = useState(initialValue);
-    const { name, username, email, phone } = user;
+    const { name, username,  email, phone } = user;
     const { id } = useParams();
 
     let navigate = useNavigate();

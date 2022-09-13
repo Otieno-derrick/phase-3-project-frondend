@@ -2,8 +2,8 @@
   "users": [
     {
       "id": 1,
-      "name": "Leanne Grahamm",
-      "username": "Brett",
+      "name": "Leanne Grahammm",
+      "username": "Bret",
       "email": "Sincere@april.biz",
       "address": {
         "street": "Kulas Light",
@@ -206,64 +206,6 @@
         "catchPhrase": "Switchable contextually-based project",
         "bs": "aggregate real-time technologies"
       }
-    },
-    {
-      "id": 10,
-      "name": "Clementina DuBuque",
-      "username": "Moriah.Stanton",
-      "email": "Rey.Padberg@karina.biz",
-      "address": {
-        "street": "Kattie Turnpike",
-        "suite": "Suite 198",
-        "city": "Lebsackbury",
-        "zipcode": "31428-2261",
-        "geo": {
-          "lat": "-38.2386",
-          "lng": "57.2232"
-        }
-      },
-      "phone": "024-648-3804",
-      "website": "ambrose.net",
-      "company": {
-        "name": "Hoeger LLC",
-        "catchPhrase": "Centralized empowering task-force",
-        "bs": "target end-to-end models"
-      }
-    },
-    {
-      "name": "Derrick Otieno",
-      "username": "derrick",
-      "email": "otieno.derrick@student.moringaschool.com",
-      "phone": "03728794",
-      "id": 11
-    },
-    {
-      "name": "Nunua all",
-      "username": "otieno-derrick",
-      "email": "otieno.derrick@student.moringaschool.com",
-      "phone": "03728794",
-      "id": 12
-    },
-    {
-      "name": "Nunua all",
-      "username": "otieno-derrick",
-      "email": "otieno.derrick@student.moringaschool.com",
-      "phone": "03728794",
-      "id": 13
-    },
-    {
-      "name": "",
-      "username": "",
-      "email": "",
-      "phone": "",
-      "id": 14
-    },
-    {
-      "name": "",
-      "username": "",
-      "email": "",
-      "phone": "",
-      "id": 15
     }
   ]
 }
