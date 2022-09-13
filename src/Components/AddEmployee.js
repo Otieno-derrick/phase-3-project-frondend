@@ -10,7 +10,12 @@ const initialValue = {
     phone: ''
 }
 
-
+const Container = styled(FormGroup)`
+    width: 50%;
+    margin: 5% 0 0 25%;
+    & > div {
+        margin-top: 20px;
+`;
 
 const AddEmployee = () => {
     const [user, setUser] = useState(initialValue);
